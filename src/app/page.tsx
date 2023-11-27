@@ -1,11 +1,16 @@
-import Image from "next/image";
-import Link from "next/link";
 import styles from "./page.module.scss";
+import Header from "@/components/Header/Header";
+import FeatureLink from "@/components/FeatureLink/FeatureLink";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Link href="/todo">Todo</Link>
+      <Header title="Magic Box" />
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
+        <FeatureLink />
+        <FeatureLink />
+        <FeatureLink />
+      </div>
     </main>
   );
 }

@@ -17,8 +17,11 @@ const TodoItems = ({
           return (
             <li key={todo.id}>
               <span>{todo.todo}</span>
-              <span>
-                <button onClick={() => todoDeleteHandler(todo.id)}>
+              <span
+                className={styles.buttons}
+                onClick={() => todoDeleteHandler(todo.id)}
+              >
+                <button>
                   <PiTrashSimpleThin className={styles.deleteIcon} />
                 </button>
               </span>

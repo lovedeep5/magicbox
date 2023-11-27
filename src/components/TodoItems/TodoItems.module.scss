@@ -9,7 +9,8 @@
 
   li {
     background-color: $color-primary;
-    padding: 5px 5px 5px 10px;
+    padding-left: 20px;
+
     margin: 10px 10px;
     text-align: left;
     border-radius: 3px;
@@ -21,13 +22,19 @@
     animation-duration: 0.5s;
     transition: all 0.5s;
 
-    button {
-      background-color: transparent;
-      color: white;
-      border: none;
+    .buttons {
+      background-color: $color-secondary;
+      padding: 10px;
+      cursor: pointer;
+      button {
+        background-color: transparent;
+        color: white;
+        border: none;
+        cursor: pointer;
 
-      .deleteIcon {
-        font-size: 20px;
+        .deleteIcon {
+          font-size: 20px;
+        }
       }
     }
   }

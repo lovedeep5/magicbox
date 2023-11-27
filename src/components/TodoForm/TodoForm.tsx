@@ -22,7 +22,7 @@ const TodoForm: React.FC<TodoFormTypes> = ({
             value={input}
             onChange={todoChangeHandler}
           />
-          <button onClick={createTodoHandler}>Go</button>
+          <button onClick={createTodoHandler}>Create</button>
         </div>
       </div>
     </>
