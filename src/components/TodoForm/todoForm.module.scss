@@ -1,0 +1,34 @@
+@import "../../globalStyles.scss";
+.todoForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .todoInputGroup {
+    display: flex;
+    padding: 5px;
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    border-radius: 50px;
+
+    input {
+      border: none;
+      margin-left: 20px;
+      flex-grow: 1;
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+    button {
+      background-color: $color-primary;
+      color: $color-white;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+    }
+  }
+}
