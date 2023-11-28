@@ -1,0 +1,44 @@
+@import "../../globalStyles.scss";
+
+.counter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+
+  .numberContainer {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+  }
+
+  .animation {
+    animation-name: flash;
+    animation-duration: 0.5s;
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .btn {
+      @extend .button;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes flash {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -4,3 +4,12 @@ $color-tertiary: #f5fccd;
 $color-other: #78d6c6;
 $color-black: #161616;
 $color-white: #fafafa;
+
+.button {
+  border: none;
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 10px 15px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
