@@ -4,7 +4,7 @@ import HeaderStyles from "./Header.module.scss";
 interface HeaderProps {
   title: string;
 }
-const Header: React.FC<HeaderProps> = ({ title }) => {
+const Header = ({ title }: HeaderProps) => {
   return <div className={HeaderStyles.Header}>{title}</div>;
 };
 
