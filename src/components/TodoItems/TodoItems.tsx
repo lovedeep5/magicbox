@@ -3,13 +3,12 @@ import { TodoType } from "@/types";
 import { PiTrashSimpleThin } from "react-icons/pi";
 import styles from "./TodoItems.module.scss";
 
-const TodoItems = ({
-  todos,
-  todoDeleteHandler,
-}: {
+interface TodoItemsType {
   todos: TodoType[];
   todoDeleteHandler: (id: string) => void;
-}) => {
+}
+
+const TodoItems = ({ todos, todoDeleteHandler }: TodoItemsType) => {
   return (
     <ul className={styles.todoItems}>
       {todos.length ? (
