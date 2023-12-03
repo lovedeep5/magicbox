@@ -1,0 +1,9 @@
+@import "../../globalStyles.scss";
+
+.Header {
+  position: relative;
+  background-color: $color-primary;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}

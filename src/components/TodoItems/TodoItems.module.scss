@@ -1,0 +1,60 @@
+@import "../../globalStyles.scss";
+
+.todoItems {
+  padding: 0;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  list-style-type: none;
+
+  li {
+    background-color: $color-primary;
+    padding-left: 20px;
+
+    margin: 10px 10px;
+    text-align: left;
+    border-radius: 3px;
+    color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: pop;
+    animation-duration: 0.5s;
+    transition: all 0.5s;
+
+    .buttons {
+      background-color: $color-secondary;
+      padding: 10px;
+      cursor: pointer;
+      button {
+        background-color: transparent;
+        color: white;
+        border: none;
+        cursor: pointer;
+
+        .deleteIcon {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0.5;
+    background-color: $color-tertiary;
+  }
+  50% {
+    transform: translateY(-12px);
+    opacity: 0.8;
+    background-color: $color-secondary;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+    background-color: $color-primary;
+  }
+}
